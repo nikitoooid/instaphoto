@@ -11,6 +11,10 @@
   </head>
 
   <body>
+    <%# Наше костыльное меню %>
+    <%= link_to "Main Page", root_path%>
+    <%= link_to "About", pages_about_path%>
+    <%# Подгрузка страницы %>
     <%= yield %>
   </body>
 </html>
