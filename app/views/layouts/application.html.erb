@@ -11,10 +11,21 @@
   </head>
 
   <body>
-    <%# Наше костыльное меню %>
-    <%= link_to "Main Page", root_path%>
-    <%= link_to "About", pages_about_path%>
-    <%# Подгрузка страницы %>
-    <%= yield %>
+    <div class="container">
+      
+      <%# Наше костыльное меню %>
+      <ul class="nav">
+        <li class="nav-item">
+          <%= link_to "Main Page", root_path, class: "nav-link active"  %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "About", pages_about_path, class: "nav-link" %>
+        </li>
+      </ul>
+      
+      <%# Подгрузка страницы %>
+      <%= yield %>
+
+    </div>
   </body>
 </html>

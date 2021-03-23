@@ -1,0 +1,8 @@
+@import "bootstrap";
+
+$color-text: green;
+
+.page_background {
+    background: url(image_path('bg.jpg'));
+    background-size: cover;
+}
