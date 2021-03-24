@@ -1,7 +1,11 @@
 <h1>Main page</h1>
 
+<% if !user_signed_in? %>
+
 <div class="btn-group">
-  <a href="#" class="btn btn-primary active" aria-current="page">Sign up</a>
-  <a href="#" class="btn btn-primary">Login</a>
+  <%= link_to "Login", new_user_session_path, class: "btn btn-primary active" %>
+  <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary" %>
 </div>
+
+<% end %>
 
